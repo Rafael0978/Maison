@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Financier display';
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+main{
+    margin-left: 08px;
+}
+
+hr{
+    margin-right: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(79, 77, 77, 0.603);
+}
+
+p {
+    margin-left: 70px;
+    color: #000000;
+    text-align: left;
+}
+
+h1 {
+    padding-left: 70px;
+    color: #3b2503;
+    text-align: left;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #945f08;
+    padding-left: 50px;
+    text-align: left;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f4f0f0;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.footer-normal {
+    background-color: #f7f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #666;
+}
+
+.room {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.room-item {
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+}
+
+.room-item img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease; /* Transição suave na opacidade */
+}
+
+.room-item:hover img {
+    filter: brightness(50%); /* Torna a imagem mais escura */
+}
+
+.room-info {
+    position: absolute;
+    top: 50%; /* Ajusta para o centro da imagem */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease;
+}
+
+.room-item:hover .room-info {
+    opacity: 1; /* Torna visível quando o mouse passa sobre o item */
+}
+
+.room-info h3 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.room-info p {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+/* Corrigido erro na classe 'room-item p' */
+.room-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 200px;
+}

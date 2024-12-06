@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Financier display';
+    background-color: #fafafa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    height: 130px;
+    text-align: right;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(79, 77, 77, 0.603);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 70px;
+    margin-right: 600px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(79, 77, 77, 0.603);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    float: left;
+}
+
+.aside {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.lateral {
+    background-color: #ffffff;
+    float: right;
+    border: 1px solid rgba(79, 77, 77, 0.603);
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 210px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.form-section,
+.table-section {
+    background-color: #ffffff;
+    border-radius: 5px;
+    flex: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#moeda {
+    width: 18px;
+    height: 20px;
+    border: 0px;
+}
+
+#pedidos {
+    padding: 5px;
+    border: 1px solid #d1d5db;
+    width: 739px;
+    height: 40px;
+}
+
+#tipoQuarto {
+    padding: 5px;
+    border: 1px solid #d1d5db;
+    width: 739px;
+    height: 40px;
+}
+
+p {
+    margin-left: 70px;
+    color: #000000;
+    text-align: left;
+}
+
+h1 {
+    padding-left: 70px;
+    color: #3b2503;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #8a7248;
+    padding-left: 05px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #927d57;
+    padding-left: 05px;
+}
+
+h5 {
+    font-size: 23px;
+    margin-bottom: 5px;
+    color: #736244;
+    padding-left: 05px;
+}
+
+h9 {
+    color: #181717a4;
+    padding-left: 05px;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #a89166;
+    text-align: center;
+}
+
+.texto {
+    text-align: center;
+}
+
+.restaurante{
+    text-align: left;
+    float: right;
+    width: 490px;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #c79230;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    float: left;
+}
+
+.btn:hover {
+    background-color: #7e4f03;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f4f0f0;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a:hover {
+    color: #783110;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.footer-normal {
+    background-color: #f7f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.btt-politica{
+    text-decoration: underline;
+}
+
+#checkbox{
+    float: left;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.banner-footer {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.banner-footer img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-evento {
+    flex: 1 1 650px;
+    display: flex;
+}
+
+.gallery-evento img {
+    width: 500px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.gallery-evento p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 650px;
+    color: #333;
+    margin-left: 10px;
+}
+
+hr{
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+    flex-wrap: wrap; /* Itens responsivos */
+    margin-top: 40px;
+}
+
+.gallery-item {
+    width: 45%; /* Para caber duas imagens lado a lado */
+    display: flex;
+    flex-direction: column; /* Alinha imagem e texto verticalmente */
+    text-align: left;
+    margin-bottom: 50px; /* Espaço entre os itens */
+}
+
+.gallery-item img {
+    width: 680px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px; /* Espaço entre imagem e texto */
+    margin-right: 20px;
+    margin-left: 00px;
+}
+
+.gallery-item h3 {
+    margin: 10px 0; /* Espaço entre o título e a descrição */
+    color: #927d57;
+}
+
+.gallery-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-left: 10px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.new-price {
+    color: #c79230;
+    font-weight: bold;
+}
